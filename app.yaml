@@ -1,4 +1,4 @@
-application: go-tour
+application: upicode
 version: 1
 runtime: go
 api_version: go1
@@ -11,17 +11,17 @@ handlers:
 - url: /favicon.ico
   static_files: static/img/favicon.ico
   upload: static/img/favicon.ico
-  secure: always
+  #secure: always
 - url: /content/img
   static_dir: content/img
-  secure: always
+  #secure: always
 - url: /static
   static_dir: static
   application_readable: true
-  secure: always
+  #secure: always
 
 - url: /(.*|list|lesson/.*|compile|fmt|script\.js)
   script: _go_app
-  secure: always
+  #secure: always
 
 nobuild_files: (solutions|content)/.*
