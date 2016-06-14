@@ -11,7 +11,7 @@ handlers:
 - url: /favicon.ico
   static_files: static/img/favicon.ico
   upload: static/img/favicon.ico
-  secure: always
+  #secure: always
 - url: /content/img
   static_dir: content/img
   secure: always
